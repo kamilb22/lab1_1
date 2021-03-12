@@ -10,4 +10,20 @@ public class Product {
     private String name;
 
     private Date snapshotDate;
+
+    public String getProductId() {
+        return id;
+    }
+
+    public String getProductName() {
+        return name;
+    }
+
+    public Date getProductSnapshotDate() {
+        return snapshotDate;
+    }
+
+    public String getProductType() {
+        return type;
+    }
 }
