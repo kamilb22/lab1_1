@@ -4,14 +4,14 @@ import java.math.BigDecimal;
 
 public class Money {
     private String currency;
-    private int amount;
+    private BigDecimal amount;
 
-    Money(String currency, int amount){
+    Money(String currency, BigDecimal amount){
         this.currency = currency;
         this.amount = amount;
     }
 
-    public int getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 

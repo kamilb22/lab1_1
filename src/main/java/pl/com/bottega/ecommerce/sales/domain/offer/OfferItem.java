@@ -40,7 +40,7 @@ public class OfferItem {
 
     public OfferItem(String productId, BigDecimal productPrice, String productName, Date productSnapshotDate,
             String productType, int quantity, BigDecimal discount, String discountCause) {
-        product = new Product(productId, productName,productType ,productSnapshotDate);
+        product = new Product(productId, productName,productType ,productSnapshotDate, new Money(null,productPrice));
 
         this.productPrice = productPrice;
 

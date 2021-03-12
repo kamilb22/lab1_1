@@ -11,11 +11,14 @@ public class Product {
 
     private Date snapshotDate;
 
-    Product(String id, String type, String name, Date snapshotDate){
+    private Money price;
+
+    Product(String id, String type, String name, Date snapshotDate, Money price){
         this.id = id;
         this.type = type;
         this.name = name;
         this.snapshotDate = snapshotDate;
+        this.price = price;
     }
 
     public String getProductId() {
