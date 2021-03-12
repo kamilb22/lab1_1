@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class OfferItem {
-
+    private Money money;
     // product
     private Product product;
 
