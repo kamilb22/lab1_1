@@ -18,4 +18,13 @@ public class Money {
     public String getCurrency() {
         return currency;
     }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public int compareTo(Money totalCost) {
+        if (this.currency.equals(totalCost.currency) && this.amount.equals(totalCost.amount)) return 0;
+        return this.amount.compareTo(totalCost.amount);
+    }
 }
