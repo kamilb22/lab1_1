@@ -47,10 +47,12 @@ public class OfferItem {
     public OfferItem(String productId, BigDecimal productPrice, String productName, Date productSnapshotDate,
             String productType, int quantity, BigDecimal discount, String discountCause) {
         this.productId = productId;
-        this.productPrice = productPrice;
         this.productName = productName;
         this.productSnapshotDate = productSnapshotDate;
         this.productType = productType;
+
+
+        this.productPrice = productPrice;
 
         this.quantity = quantity;
         this.discount = discount;

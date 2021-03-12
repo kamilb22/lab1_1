@@ -11,6 +11,13 @@ public class Product {
 
     private Date snapshotDate;
 
+    Product(String id, String type, String name, Date snapshotDate){
+        this.id = id;
+        this.type = type;
+        this.name = name;
+        this.snapshotDate = snapshotDate;
+    }
+
     public String getProductId() {
         return id;
     }
